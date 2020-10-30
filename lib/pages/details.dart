@@ -270,7 +270,7 @@ class _MaterialColorDetailsState extends State<MaterialColorDetails> {
                 ),
               ),
               subtitle: Text(
-                '${colors.values.elementAt(index).values.elementAt(i)}',
+                '${colors.values.elementAt(((colors.keys.length ~/ 19) * widget.materialColorPaletteIndex) + index).values.elementAt(i)}',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
